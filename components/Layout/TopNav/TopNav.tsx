@@ -21,7 +21,7 @@ interface TopNavProps {
 
 export default function TopNav({siteName, links, extra}: TopNavProps) {
   return (
-    <div className="flex h-[60px] items-center justify-between px-6">
+    <div className="container flex h-[60px] items-center justify-between">
       <div className="bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-clip-text text-xl font-bold text-transparent">
         <NavItem title={siteName} href={'/'} />
       </div>
