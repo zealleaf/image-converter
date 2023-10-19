@@ -6,6 +6,8 @@ import '@/public/globals.css';
 import {siteConfig} from '../siteConfig';
 import {topNavLinks} from '../topNavLinks';
 
+export const runtime = 'edge';
+
 export default function LangLayout({children}: {children: React.ReactNode}) {
   return (
     <div>
