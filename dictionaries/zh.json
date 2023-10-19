@@ -1,4 +1,9 @@
 {
   "Select a image": "选择一张图片",
-  "Download the processed image": "下载处理后的图片"
+  "Download the processed image": "下载处理后的图片",
+  "Image option": "图片操作",
+  "Image option description": "填入适当的参数",
+  "Image pixel": "像素",
+  "Image width": "宽",
+  "Image height": "高"
 }

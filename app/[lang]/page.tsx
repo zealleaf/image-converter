@@ -16,7 +16,7 @@ export default async function Home({params}: {params: {lang: Locale}}) {
     <main className="flex flex-col gap-6 sm:mx-12 sm:my-12 md:flex-row lg:mx-24">
       <div className="relative flex flex-col gap-10 sm:w-full md:flex-col lg:w-1/2">
         <div className="md:w-[450px]">
-          <ImageBeforeProcess />
+          <ImageBeforeProcess t={t} />
         </div>
         <div className="md:w-[450px]">
           <WrapTilt
