@@ -1,3 +1,2 @@
-export {ImageDownload} from './ImageDownload';
-export {ImagePreview} from './ImagePreview';
-export {ImageUpload} from './ImageUpload';
+export {ImageAfterProcess} from './ImageAfterProcess';
+export {ImageBeforeProcess} from './ImageBeforeProcess';

@@ -1,5 +1,6 @@
 'use client';
 
+import {IconLang} from '@/components/Icon/IconLang';
 import {Button} from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -30,10 +31,19 @@ export default function LangToggler() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="default">
-          <span>{i18n.localesTitleMap[getSegment(1) as Locale]}</span>
-          <span className="sr-only">Toggle language</span>
-        </Button>
+        <div>
+          <Button
+            variant="outline"
+            size="icon"
+            className="inline-flex sm:hidden">
+            <IconLang className="h-[1.2rem] w-[1.2rem]" />
+            <span className="sr-only">Toggle theme</span>
+          </Button>
+          <Button variant="outline" size="default" className="hidden sm:block">
+            <span>{i18n.localesTitleMap[getSegment(1) as Locale]}</span>
+            <span className="sr-only">Toggle language</span>
+          </Button>
+        </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         {i18n.locales.map((locale) => {
