@@ -29,7 +29,7 @@ interface TopNavProps {
 
 export default function TopNav({siteName, links, extra}: TopNavProps) {
   return (
-    <div className="border-b border-b-gray-300 border-opacity-50 px-2 dark:shadow dark:shadow-[#33333380]">
+    <div className="border-b border-b-gray-300 border-opacity-50 bg-[#ffffff] px-2 dark:bg-[#040917] dark:shadow dark:shadow-[#33333380]">
       <div className="flex h-16 items-center justify-between sm:container">
         <div className="bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-clip-text text-xl font-bold text-transparent">
           <NavItem title={siteName} href={'/'} />
