@@ -1,4 +1,5 @@
 import {ThemeProvider} from '@/components/Feature/DarkMode';
+import {TailwindIndicator} from '@/components/TailwindIndicator';
 import '@/public/globals.css';
 import type {Metadata} from 'next';
 import {Inter} from 'next/font/google';
@@ -24,6 +25,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
           disableTransitionOnChange>
           {children}
         </ThemeProvider>
+        <TailwindIndicator />
       </body>
     </html>
   );

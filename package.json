@@ -23,7 +23,8 @@
     "react-dom": "^18",
     "react-parallax-tilt": "^1.7.171",
     "tailwind-merge": "^1.14.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "valtio": "^1.11.2"
   },
   "devDependencies": {
     "@types/negotiator": "^0.6.1",
