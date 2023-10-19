@@ -2,7 +2,7 @@ import Image from 'next/image';
 import {AspectRatio} from '@/components/ui/aspect-ratio';
 
 interface ImageDownloadProps {
-  src: string;
+  src?: string;
   alt?: string;
 }
 
