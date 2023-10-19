@@ -10,6 +10,8 @@ import {topNavLinks} from '../topNavLinks';
 
 const inter = Inter({subsets: ['latin']});
 
+export const runtime = 'edge';
+
 export const metadata: Metadata = {
   title: 'Image Converter',
   description: 'A simple image conversion tool online website',
