@@ -1,5 +1,3 @@
-// TODO: Mobile uses dialog
-
 'use client';
 
 import {SvgArrow3} from '@/components/Svg/SvgArrow3';
@@ -37,12 +35,10 @@ function P({t, formValueRef, contextPixelImageHandlerSnapshot}: Props) {
     <Popover>
       <PopoverTrigger asChild>
         <Image
-          className="scale-90 rounded-md transition-transform hover:scale-110 sm:scale-100"
+          className="max-h-[calc(40vw)] w-auto rounded-md transition-transform hover:scale-105 sm:max-h-56"
           width={0}
           height={0}
           src={contextPixelImageHandlerSnapshot.url}
-          sizes="100vw"
-          style={{width: '200px', height: 'auto'}}
           alt={'Image'}></Image>
       </PopoverTrigger>
       <PopoverContent className="w-80">
@@ -115,12 +111,10 @@ function D({t, formValueRef, contextPixelImageHandlerSnapshot}: Props) {
     <Dialog>
       <DialogTrigger asChild>
         <Image
-          className="scale-75 rounded-md transition-transform hover:scale-110 sm:scale-100"
+          className="max-h-[calc(40vw)] w-auto rounded-md transition-transform hover:scale-105 sm:max-h-56"
           width={0}
           height={0}
           src={contextPixelImageHandlerSnapshot.url}
-          sizes="100vw"
-          style={{width: '200px', height: 'auto'}}
           alt={'Image'}></Image>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">

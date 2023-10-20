@@ -1,4 +1,6 @@
 {
+  "Top nav pixel": "pixel",
+  "Top nav pixel path": "/en/pixel",
   "Select a image": "Select a image",
   "Download the processed image": "Download the processed image",
   "Image option": "Image option",
@@ -6,6 +8,5 @@
   "Image background": "background",
   "Image width": "width (px)",
   "Image height": "height (px)",
-  "Top nav pixel": "pixel",
   "Sure": "Sure"
 }

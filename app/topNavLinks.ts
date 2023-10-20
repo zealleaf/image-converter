@@ -4,7 +4,7 @@ import {siteConfig} from './siteConfig';
 export const getTopNavLinks = (t: Dictionary) => [
   {
     title: t['Top nav pixel'],
-    href: '/pixel',
+    href: t['Top nav pixel path'],
   },
   {
     title: 'github',

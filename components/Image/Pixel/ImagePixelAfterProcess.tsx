@@ -15,12 +15,10 @@ export function ImagePixelAfterProcess() {
       <AspectRatio ratio={16 / 9} className="grid place-items-center ">
         {contextPixelImageHandlerSnapshot.urlProcessed ? (
           <Image
-            className="scale-75 rounded-md sm:scale-100"
+            className="max-h-[calc(40vw)] w-auto rounded-md sm:max-h-60"
             width={0}
             height={0}
             src={contextPixelImageHandlerSnapshot.urlProcessed}
-            sizes="100vw"
-            style={{width: '200px', height: 'auto'}}
             alt={'Image'}></Image>
         ) : null}
       </AspectRatio>

@@ -35,8 +35,8 @@ export const contextPixelImageHandler = proxy({
 
 async function generateImageFromUrl(
   imageUrl: string,
-  targetWidth: number,
-  targetHeight: number
+  targetWidth?: number,
+  targetHeight?: number
 ): Promise<string> {
   try {
     // Create an Image object
@@ -47,6 +47,18 @@ async function generateImageFromUrl(
       image.onload = resolve;
       image.src = imageUrl;
     });
+
+    // Calculate the aspect ratio of the image
+    const aspectRatio = image.width / image.height;
+
+    // If only one dimension is provided, calculate the other dimension based on the aspect ratio
+    if (targetWidth && !targetHeight) {
+      targetHeight = targetWidth / aspectRatio;
+    } else if (targetHeight && !targetWidth) {
+      targetWidth = targetHeight * aspectRatio;
+    } else {
+      throw new Error('Please provide either targetWidth or targetHeight.');
+    }
 
     // Create a Canvas element
     const canvas = document.createElement('canvas');
