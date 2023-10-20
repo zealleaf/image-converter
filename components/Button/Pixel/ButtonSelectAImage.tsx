@@ -1,7 +1,7 @@
 'use client';
 
-import {contextImageHandler} from '@/context';
-import {Button} from '../ui/button';
+import {Button} from '@/components/ui/button';
+import {contextPixelImageHandler} from '@/context';
 
 const handleImageChange = (e: any) => {
   const file = e.target.files[0];
@@ -10,7 +10,7 @@ const handleImageChange = (e: any) => {
     const reader = new FileReader();
 
     reader.onloadend = () => {
-      contextImageHandler.setUrl({value: reader.result as string});
+      contextPixelImageHandler.setUrl({value: reader.result as string});
     };
 
     reader.readAsDataURL(file);

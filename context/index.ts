@@ -1,1 +1,1 @@
-export {contextImageHandler} from './contextImageHandler';
+export {contextPixelImageHandler} from './pixel/contextPixelImageHandler';

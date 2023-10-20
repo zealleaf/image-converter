@@ -1,9 +1,9 @@
 import {proxy} from 'valtio';
 
-export const contextImageHandler = proxy({
+export const contextPixelImageHandler = proxy({
   url: '',
   urlProcessed: '',
   setUrl: ({value}: {value: string}) => {
-    contextImageHandler.url = value;
+    contextPixelImageHandler.url = value;
   },
 });

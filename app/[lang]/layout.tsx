@@ -2,18 +2,28 @@ import {ThemeToggler} from '@/components/Feature/DarkMode';
 import {LangToggler} from '@/components/Feature/I18n';
 import {Footer} from '@/components/Layout/Footer';
 import {TopNav} from '@/components/Layout/TopNav';
+import {Locale} from '@/i18n.config';
+import {getDictionary} from '@/lib/dictionary';
 import '@/public/globals.css';
 import {siteConfig} from '../siteConfig';
-import {topNavLinks} from '../topNavLinks';
+import {getTopNavLinks} from '../topNavLinks';
 
 export const runtime = 'edge';
 
-export default function LangLayout({children}: {children: React.ReactNode}) {
+export default async function LangLayout({
+  params,
+  children,
+}: {
+  params: {lang: Locale};
+  children: React.ReactNode;
+}) {
+  const t = await getDictionary(params.lang);
+
   return (
     <div>
       <TopNav
         siteName={siteConfig.siteName}
-        links={topNavLinks}
+        links={getTopNavLinks(t)}
         extra={
           <div className="flex gap-2">
             <LangToggler />
