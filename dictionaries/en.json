@@ -3,8 +3,9 @@
   "Download the processed image": "Download the processed image",
   "Image option": "Image option",
   "Image option description": "Fill in the appropriate parameters",
-  "Image pixel": "pixel",
-  "Image width": "width",
-  "Image height": "height",
-  "Top nav pixel": "pixel"
+  "Image background": "background",
+  "Image width": "width (px)",
+  "Image height": "height (px)",
+  "Top nav pixel": "pixel",
+  "Sure": "Sure"
 }

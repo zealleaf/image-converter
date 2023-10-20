@@ -1,6 +1,6 @@
 import {
-  ButtonDownloadTheProcessedImage,
-  ButtonSelectAImage,
+  ButtonPixelDownloadTheProcessedImage,
+  ButtonPixelSelectAImage,
 } from '@/components/Button/Pixel';
 import {
   ImagePixelAfterProcess,
@@ -23,8 +23,8 @@ export default async function Pixel({params}: {params: {lang: Locale}}) {
         </div>
         <div className="md:w-[450px]">
           <WrapTilt
-            scale={1.02}
-            perspective={1000}
+            scale={1.05}
+            perspective={2000}
             glareEnable={true}
             glareMaxOpacity={0.45}
             glareBorderRadius={'16px'}>
@@ -43,11 +43,12 @@ export default async function Pixel({params}: {params: {lang: Locale}}) {
 
       <div className="flex flex-col justify-center md:w-1/2 lg:pl-32">
         <section className="space-y-3">
-          <ButtonSelectAImage text={t['Select a image']}></ButtonSelectAImage>
-          <ButtonDownloadTheProcessedImage
+          <ButtonPixelSelectAImage
+            text={t['Select a image']}></ButtonPixelSelectAImage>
+          <ButtonPixelDownloadTheProcessedImage
             text={
               t['Download the processed image']
-            }></ButtonDownloadTheProcessedImage>
+            }></ButtonPixelDownloadTheProcessedImage>
         </section>
       </div>
     </main>

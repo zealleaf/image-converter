@@ -1,2 +1,2 @@
-export {ButtonDownloadTheProcessedImage} from './ButtonDownloadTheProcessedImage';
-export {ButtonSelectAImage} from './ButtonSelectAImage';
+export {ButtonPixelDownloadTheProcessedImage} from './ButtonPixelDownloadTheProcessedImage';
+export {ButtonPixelSelectAImage} from './ButtonPixelSelectAImage';

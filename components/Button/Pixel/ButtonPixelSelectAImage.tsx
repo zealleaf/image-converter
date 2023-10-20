@@ -10,7 +10,8 @@ const handleImageChange = (e: any) => {
     const reader = new FileReader();
 
     reader.onloadend = () => {
-      contextPixelImageHandler.setUrl({value: reader.result as string});
+      contextPixelImageHandler.setUrl(reader.result as string);
+      contextPixelImageHandler.setImageName(file.name);
     };
 
     reader.readAsDataURL(file);
@@ -26,7 +27,7 @@ const handleButtonClick = () => {
   input.click();
 };
 
-export function ButtonSelectAImage({text}: {text: string}) {
+export function ButtonPixelSelectAImage({text}: {text: string}) {
   return (
     <div>
       <Button onClick={handleButtonClick}>{text}</Button>

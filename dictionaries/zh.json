@@ -3,8 +3,9 @@
   "Download the processed image": "下载处理后的图片",
   "Image option": "图片操作",
   "Image option description": "填入适当的参数",
-  "Image pixel": "像素",
-  "Image width": "宽",
-  "Image height": "高",
-  "Top nav pixel": "像素"
+  "Image background": "背景",
+  "Image width": "宽 (px)",
+  "Image height": "高 (px)",
+  "Top nav pixel": "像素",
+  "Sure": "确定"
 }
